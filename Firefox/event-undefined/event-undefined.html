@@ -1,0 +1,27 @@
+<html>
+<body>
+
+
+  <div>
+   <button onclick="javascript:myBtnOnClickNotWorking()" value="">Not Working Button in FF</button>
+</div>
+<div>
+   <button onclick="javascript:myBtnOnClick(event)" value="Working Button in FF">Working Button in FF</button>
+</div>
+
+  </body>
+  <script>
+   function myBtnOnClickNotWorking(){
+     event.preventDefault();
+     alert("hello world");
+   }
+
+   function myBtnOnClick(event){
+     event.preventDefault();
+     alert("hello world");
+
+   }
+
+  </script>
+
+</html>
