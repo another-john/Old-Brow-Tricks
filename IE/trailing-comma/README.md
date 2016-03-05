@@ -1,5 +1,9 @@
 As IE7 does not tolerate trailing comma any thing like below :
+```javascript
+var myObject = {
 
-`var myObject = {name:"JOHN",job:"Artist"__,__}`
-
+  name:"JOHN",
+  job:"Artist", //   <--this comma 
+}
+```
 will break your javascript.
