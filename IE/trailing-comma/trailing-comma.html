@@ -1,0 +1,17 @@
+<html>
+   <body>
+     <h3>My Name Is: </h3>
+    <div id="container">
+    </div>
+
+   </body>
+   <script>
+    var myObject= {
+        name: "john",
+        job: "artist",     //<--- this comma will break the program in IE7
+
+    };
+    document.getElementById("container").innerHTML = myObject.name;
+
+   </script>
+</html>
